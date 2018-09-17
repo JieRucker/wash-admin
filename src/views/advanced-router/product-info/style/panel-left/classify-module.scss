@@ -1,0 +1,42 @@
+@import "../mixin.scss";
+@import "~assets/public/common.scss";
+
+.classify-module {
+  &.active {
+    box-shadow: -2px 0 15px #aeaeae;
+    border-right: 2px solid #56a848;
+  }
+  @include module-box(204px);
+  .empty-block {
+    @include module-empty-block;
+  }
+
+  .classify-block-panel {
+    .module-title {
+      padding: 10px;
+      margin: 0 10px;
+      font-size: 16px;
+      color: #323232;
+    }
+    .image-url {
+      min-height: 100px;
+    }
+    .classify-btn {
+      margin: 10px auto;
+      display: block;
+      width: 280px;
+      text-align: center;
+      background-color: #56A848;
+      line-height: 34px;
+      color: #fff;
+      border-radius: 3px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+  }
+
+  .green-layer {
+    @include module-green-layer;
+  }
+}

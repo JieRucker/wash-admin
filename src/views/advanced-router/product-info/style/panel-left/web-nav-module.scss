@@ -1,0 +1,44 @@
+@import "../mixin.scss";
+@import "~assets/public/common.scss";
+
+.web-nav-module {
+  &.active {
+    box-shadow: -2px 0 15px #aeaeae;
+    border-right: 2px solid #56a848;
+  }
+  @include module-box(96px);
+  .empty-block {
+    @include module-empty-block;
+  }
+
+  .web-nav-block-panel {
+    .module-title {
+      padding: 10px;
+      margin: 0 10px;
+      font-size: 16px;
+      color: #323232;
+    }
+    .file-list {
+      padding: 0 10px;
+      color: #666;
+      font-size: 12px;
+      .li-list {
+        padding: 8px 10px;
+        border-bottom: 1px solid #e4e4e4;
+        .list-name {
+          width: 210px;
+          @include text-overflow;
+        }
+        .arrow-outline {
+          float: right;
+          font-size: 20px;
+          margin-top: -18px;
+        }
+      }
+    }
+  }
+
+  .green-layer {
+    @include module-green-layer;
+  }
+}

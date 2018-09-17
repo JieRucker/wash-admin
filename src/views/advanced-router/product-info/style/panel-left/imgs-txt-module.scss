@@ -1,0 +1,62 @@
+@import "../mixin.scss";
+@import "~assets/public/common.scss";
+
+.imgs-txt-module {
+  &.active {
+    box-shadow: -2px 0 15px #aeaeae;
+    border-right: 2px solid #56a848;
+  }
+  @include module-box;
+  .empty-block {
+    @include module-empty-block;
+  }
+
+  .imgs-txt-block-panel {
+    .imgs-title {
+      width: 100%;
+      padding: 10px 15px;
+      color: #333;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+      text-align: left;
+      @include text-overflow;
+    }
+    .upload-tips {
+      width: 100%;
+      height: 145px;
+      border-radius: 0;
+      background-size: 60px;
+      padding: 0;
+      color: #333;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+      position: static;
+      bottom: 0;
+      top: auto;
+      left: 0;
+      text-align: left;
+      @include text-overflow;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 145px;
+      }
+    }
+    .text-content {
+      width: 100%;
+      padding: 10px 15px;
+      color: #333;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      text-align: left;
+      @include text-overflow;
+    }
+  }
+
+  .green-layer {
+    @include module-green-layer;
+  }
+}

@@ -1,0 +1,69 @@
+@import "../mixin.scss";
+@import "~assets/public/common.scss";
+
+.card-module {
+  &.active {
+    box-shadow: -2px 0 15px #aeaeae;
+    border-right: 2px solid #56a848;
+  }
+  @include module-box(80px);
+  .empty-block {
+    @include module-empty-block;
+  }
+
+  .card-block-panel {
+    .module-title {
+      padding: 10px;
+      margin: 0 10px;
+      font-size: 16px;
+      color: #323232;
+    }
+    .card-box {
+      position: relative;
+      padding: 20px;
+      img {
+        width: 70px;
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 100%;
+      }
+      .card-info {
+        display: inline-block;
+        width: 180px;
+        vertical-align: middle;
+        margin-left: 20px;
+        .name {
+          font-size: 14px;
+          margin-bottom: 2px;
+          color: #666;
+          line-height: 20px;
+          font-weight: 400;
+          @include text-overflow;
+        }
+        .position {
+          color: #666;
+          font-weight: 400;
+          line-height: 20px;
+          font-size: 12px;
+        }
+        .orgname {
+          color: #666;
+          font-weight: 400;
+          line-height: 20px;
+          font-size: 12px;
+        }
+      }
+      .card-icon {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        font-size: 20px;
+        margin-top: -10px;
+      }
+    }
+  }
+
+  .green-layer {
+    @include module-green-layer;
+  }
+}

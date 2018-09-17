@@ -1,0 +1,36 @@
+@import "../mixin.scss";
+@import "~assets/public/common.scss";
+
+.imgs-group-module {
+  &.active {
+    box-shadow: -2px 0 15px #aeaeae;
+    border-right: 2px solid #56a848;
+  }
+  @include module-box(169px);
+  .empty-block {
+    @include module-empty-block;
+  }
+
+  .imgs-group-block-panel{
+    .module-title{
+      padding: 10px 15px;
+      color: #333;
+      font-size: 16px;
+    }
+    .carousel-box{
+      .image-carouse{
+        height: 125px;
+        line-height: 125px;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        background: #506b9e;
+      }
+
+    }
+  }
+
+  .green-layer {
+    @include module-green-layer;
+  }
+}

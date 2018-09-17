@@ -1,0 +1,17 @@
+@import "../mixin.scss";
+@import "~assets/public/common.scss";
+
+.record-module {
+  &.active {
+    box-shadow: -2px 0 15px #aeaeae;
+    border-right: 2px solid #56a848;
+  }
+  @include module-box(80px);
+  .empty-block {
+    @include module-empty-block;
+  }
+
+  .green-layer {
+    @include module-green-layer;
+  }
+}

@@ -1,0 +1,37 @@
+@import "../mixin.scss";
+@import "~assets/public/common.scss";
+
+.material-module {
+  &.active {
+    box-shadow: -2px 0 15px #aeaeae;
+    border-right: 2px solid #56a848;
+  }
+  @include module-box(80px);
+  .empty-block {
+    @include module-empty-block;
+  }
+
+  .material-block-panel {
+    position: relative;
+    padding: 10px;
+    margin: 0 10px;
+    .material-title {
+      line-height: 60px;
+    }
+    .material-icon {
+      color: #fff;
+      position: absolute;
+      background-color: #56a848;
+      border-radius: 3px;
+      padding: 1px 6px;
+      font-size: 12px;
+      right: 8px;
+      top: 12px;
+      font-style: normal;
+    }
+  }
+
+  .green-layer {
+    @include module-green-layer;
+  }
+}
